@@ -10,8 +10,10 @@
 #
 ###############################################################################
 
-
-chart.Weights.DE <- function(object, ..., neighbors = NULL, main="Weights", las = 3, xlab=NULL, cex.lab = 1, element.color = "darkgray", cex.axis=0.8, colorset=NULL, legend.loc="topright", cex.legend=0.8, plot.type="line"){
+#' @rdname chart.Weights
+#' @method chart.Weights optimize.portfolio.DEoptim
+#' @export
+chart.Weights.optimize.portfolio.DEoptim <- chart.Weights.DE <- function(object, ..., neighbors = NULL, main="Weights", las = 3, xlab=NULL, cex.lab = 1, element.color = "darkgray", cex.axis=0.8, colorset=NULL, legend.loc="topright", cex.legend=0.8, plot.type="line"){
   # Specific to the output of optimize.portfolio with optimize_method="DEoptim"
   if(!inherits(object, "optimize.portfolio.DEoptim")) stop("object must be of class 'optimize.portfolio.DEoptim'")
   
@@ -85,11 +87,6 @@ chart.Weights.DE <- function(object, ..., neighbors = NULL, main="Weights", las 
     box(col = element.color)
   }
 }
-
-#' @rdname chart.Weights
-#' @method chart.Weights optimize.portfolio.DEoptim
-#' @export
-chart.Weights.optimize.portfolio.DEoptim <- chart.Weights.DE
 
 
 chart.Scatter.DE <- function(object, ..., neighbors = NULL, return.col='mean', risk.col='ES', chart.assets=FALSE, element.color = "darkgray", cex.axis=0.8, xlim=NULL, ylim=NULL){
