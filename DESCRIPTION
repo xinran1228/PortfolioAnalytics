@@ -3,8 +3,9 @@ Type: Package
 Title: Portfolio Analysis, Including Numerical Methods for Optimization
     of Portfolios
 Authors@R: c(
-    person(given=c("Brian","G."),family="Peterson",role=c("cre","aut","cph"),
-    email="brian@braverock.com") ,
+    person(given="Xinran",family="Zhao",role=c("cre","aut","cph"),
+    email="zhaoxinran1228@gmail.com") ,
+    person(given=c("Brian","G."),family="Peterson",role="ctb") ,
     person(given="Peter",family="Carl",role=c("aut","cph"),
     email="peter@braverock.com") ,
     person(given="Kris",family="Boudt",role=c("ctb","cph")) ,
@@ -13,7 +14,6 @@ Authors@R: c(
     person(given="Guy",family="Yollin",role="ctb") ,
     person(given="R. Douglas",family="Martin",role="ctb") ,
     person(given="Xiaokang",family="Feng",role="ctb") ,
-    person(given="Xinran",family="Zhao",role="ctb") ,
     person(given="Yifu",family="Kang",role="ctb") )
 Version: 2.0.0
 Date: 2024-06-24
